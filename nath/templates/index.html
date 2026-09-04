@@ -1,11 +1,483 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FastAPI</title>
-  </head>
-  <body>
-    <h1>Hello FastAPI</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nossa História</title>
+
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVEGAÇÃO
+    ========================== -->
+
+    <header class="header">
+        <nav class="nav container">
+
+            <a href="#inicio" class="logo">
+                Nossa História
+            </a>
+
+            <button class="menu-button" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <ul class="nav-list">
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+
+                <li>
+                    <a href="#historia">Nossa história</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             CAPÍTULO 1
+        ========================== -->
+
+        <section id="inicio" class="chapter chapter-intro">
+
+            <div class="chapter-content">
+
+                <span class="chapter-number">
+                    Capítulo 01
+                </span>
+
+                <h1>
+                    O começo
+                </h1>
+
+                <p>
+                    <h3>Como te conheci?</h3>
+                <p>A primeira vez que te vi, foi em um video de parabens do "Sade"(nessa época conhecia como sade mesmo ksks), parabens de que? Não lembro se era aniversário dele ou do canal.</p>
+                <div class="monster-container">
+                    <p>Nessa epoca voce era prisioneira de um monstro terrivel</p>
+                    <div>
+                    <img src="static/imagens/demon.png" alt="Monstro Terrível" class="monster-image">
+                    <p>Lorde Bumbum Mole</p>
+                    </div>
+                </div>
+                <div class="cod-container">
+                    <div>
+                    <img src="static/imagens/happy-cod.png" alt="eu feliz na porra do COD" class="cod-image">
+                    <p>eu feliz no cod</p>
+                    </div>
+                    <p>Outras interacóes que tivemos foi na epoca do mine, terraria e cod.</p>
+                </div>
+                <p>Ouvi disersas reclamaçoes do Bruno(aqui já conhecia como Bruno mesmo ksks) sobre esse monstro que o aprisionava</p>
+                </p>
+
+                <a href="#historia"><button class="next-button">
+                    Começar nossa história
+                </button></a>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             CAPÍTULO 2
+        ========================== -->
+
+        <section id="historia" class="chapter chapter-friendship">
+
+            <div class="chapter-content">
+
+                <span class="chapter-number">
+                    Capítulo 02
+                </span>
+
+                <h2>
+                    Nossa amizade
+                </h2>
+
+                <p>
+                    É pra clicar nas FOTOOOO
+                </p>
+
+
+                <!-- GALERIA -->
+
+                <div class="gallery">
+
+                    <figure class="photo memory" id="memory">
+                        <img
+                            src="assets/images/foto-01.jpg"
+                            alt="Nossa lembrança"
+                        >
+
+                        <figcaption>
+                            <h3>Amizade... (na maldade?)</h3>
+                        </figcaption>
+                        <div class="hidden-text" id="hidden-text" data-text="Sejamos sinceros, essa amizade foi na maldade...">
+                            <p id="typing-text"></p>
+                        </div>
+                    </figure>
+
+
+                    <figure class="photo memory" id="memory">
+                        <img
+                            src="assets/images/foto-01.jpg"
+                            alt="Nossa lembrança"
+                        >
+
+                        <figcaption>
+                            <h3>3 red flags</h3>
+                        </figcaption>
+                        <div class="hidden-text" id="hidden-text">
+                            <p id="typing-text"></p>
+                        </div>
+                    </figure>
+
+
+                    <figure class="photo memory" id="memory">
+                        <img
+                            src="assets/images/foto-01.jpg"
+                            alt="Nossa lembrança"
+                        >
+
+                        <figcaption>
+                            <h3>web soninho</h3>
+                        </figcaption>
+                        <div class="hidden-text" id="hidden-text">
+                            <p id="typing-text"></p>
+                        </div>
+                    </figure>
+
+                    <figure class="photo memory" id="memory">
+                        <img
+                            src="assets/images/foto-01.jpg"
+                            alt="Nossa lembrança"
+                        >
+
+                        <figcaption>
+                            <h3>capotar rapido</h3>
+                        </figcaption>
+                        <div class="hidden-text" id="hidden-text">
+                            <p id="typing-text"></p>
+                        </div>
+                    </figure>
+
+                    <figure class="photo memory" id="memory">
+                        <img
+                            src="assets/images/foto-01.jpg"
+                            alt="Nossa lembrança"
+                        >
+
+                        <figcaption>
+                            <h3>meu lado dormindo</h3>
+                        </figcaption>
+                        <div class="hidden-text" id="hidden-text">
+                            <p id="typing-text"></p>
+                        </div>
+                    </figure>
+
+                    <figure class="photo memory" id="memory">
+                        <img
+                            src="assets/images/foto-01.jpg"
+                            alt="Nossa lembrança"
+                        >
+
+                        <figcaption>
+                            <h3>assistindo coisas juntos</h3>
+                        </figcaption>
+                        <div class="hidden-text" id="hidden-text">
+                            <p id="typing-text"></p>
+                        </div>
+                    </figure>
+
+                    <figure class="photo memory" id="memory">
+                        <img
+                            src="assets/images/foto-01.jpg"
+                            alt="Nossa lembrança"
+                        >
+
+                        <figcaption>
+                            <h3>tomando o lugar do syll</h3>
+                        </figcaption>
+                        <div class="hidden-text" id="hidden-text">
+                            <p id="typing-text"></p>
+                        </div>
+                    </figure>
+
+                    <figure class="photo memory" id="memory">
+                        <img
+                            src="assets/images/foto-01.jpg"
+                            alt="Nossa lembrança"
+                        >
+
+                        <figcaption>
+                            <h3>Bruno com ciumes e modo serio</h3>
+                        </figcaption>
+                        <div class="hidden-text" id="hidden-text">
+                            <p id="typing-text"></p>
+                        </div>
+                    </figure>
+
+                    <figure class="photo memory" id="memory">
+                        <img
+                            src="assets/images/foto-01.jpg"
+                            alt="Nossa lembrança"
+                        >
+
+                        <figcaption>
+                            <h3>nossa declaração de amor</h3>
+                        </figcaption>
+                        <div class="hidden-text" id="hidden-text">
+                            <p id="typing-text"></p>
+                        </div>
+                    </figure>
+
+                </div>
+
+
+                <button class="next-button">
+                    Continuar
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             CAPÍTULO 4
+        ========================== -->
+
+        <section class="chapter chapter-letter">
+
+            <div class="chapter-content">
+
+                <span class="chapter-number">
+                    Capítulo 03
+                </span>
+
+                <h2>
+                    O que sinto
+                </h2>
+
+
+                <article class="love-letter">
+
+                    <p>
+                        Acho que voce já sabe o que eu sinto por voce, mas mesmo assim vou escrever aqui, para que fique registrado e para que voce possa ler sempre que quiser.
+                    </p>
+
+                    <p>
+                        Nath voce me faz querer ser uma pessoa melhor, quero voce ao meu lado, quero lutar por voce, quero ver voce pintando seus quadros, quero ver voce sorrindo, quero ver voce escrevendo suas historias e realizando seus sonhos, quero ver voce feliz.
+                    </p>
+
+                    <p>
+                        Mas eu tenho que lembrar que o futuro não são apenas flores, há muitos espinhos nesse caminho, nossos problemas, defeitos, falhas pessoais que nos atormentam e desafios do mundo pela frente...
+                    </p>
+
+                    <p>
+                        E do mesmo jeito que fizemos até agora, vou te pedir que continue ao meu lado e juntos possamos superar esses desafios, e que possamos construir uma vida juntos.
+                    </p>
+
+                    <p>Eu te amo muito meu Anjo</p>
+
+                </article>
+
+                <button class="next-button">
+                    Continuar
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CAPÍTULO 5
+             PEDIDO
+        ========================== -->
+
+        <section class="chapter chapter-question">
+
+            <div class="chapter-content">
+
+                <span class="chapter-number">
+                    Capítulo 04
+                </span>
+
+                <h2>
+                    A pergunta
+                </h2>
+
+                <p>
+                    <!-- TEXTO -->
+                </p>
+
+                <p>
+                    <!-- TEXTO -->
+                </p>
+
+
+                <div class="question">
+
+                    <h3>
+                        Você quer escrever
+                        o próximo capítulo
+                        comigo?
+                    </h3>
+
+
+                    <div class="question-buttons">
+
+                        <button
+                            id="yes-button"
+                            class="button button-yes"
+                        >
+                            Sim ❤️
+                        </button>
+
+                        <button
+                            id="no-button"
+                            class="button button-no"
+                        >
+                            Ainda não
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CAPÍTULO 6
+             NAMORO
+        ========================== -->
+
+        <section class="chapter chapter-future locked">
+
+            <div class="chapter-content">
+
+                <span class="chapter-number">
+                    Capítulo 05
+                </span>
+
+                <div class="lock-icon">
+                    ❤️
+                </div>
+
+                <h2>
+                    Namoro
+                </h2>
+
+                <p>
+                    Este capítulo ainda está
+                    sendo escrito...
+                </p>
+
+                <span class="construction">
+                    Em construção
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CAPÍTULO 7
+        ========================== -->
+
+        <section class="chapter chapter-plans locked">
+
+            <div class="chapter-content">
+
+                <span class="chapter-number">
+                    Capítulo 07
+                </span>
+
+                <div class="lock-icon">
+                    🔒
+                </div>
+
+                <h2>
+                    Nossos planos
+                </h2>
+
+                <p>
+                    Ainda temos muitos capítulos
+                    para escrever.
+                </p>
+
+                <div class="future-cards">
+
+                    <article class="future-card">
+                        <h3>
+                            Primeira viagem
+                        </h3>
+
+                        <p>
+                            Ainda não aconteceu...
+                        </p>
+                    </article>
+
+
+                    <article class="future-card">
+                        <h3>
+                            Nossas aventuras
+                        </h3>
+
+                        <p>
+                            Ainda não aconteceu...
+                        </p>
+                    </article>
+
+
+                    <article class="future-card">
+                        <h3>
+                            Nossas memórias
+                        </h3>
+
+                        <p>
+                            Ainda não aconteceu...
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <p>
+            Feito para contar a nossa história.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="static/js/main.js"></script>
+
+</body>
 </html>

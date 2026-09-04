@@ -1,0 +1,39 @@
+@media (max-width: 700px) {
+
+    .nav-list {
+        display: none;
+    }
+
+
+    .menu-button {
+        display: block;
+    }
+
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    .future-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .love-letter {
+        padding: 2rem 1.5rem;
+    }
+
+
+    .question-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    .button {
+        width: 100%;
+    }
+
+}
