@@ -1,39 +1,60 @@
 const yesButton = document.querySelector("#yes-button");
 const noButton = document.querySelector("#no-button");
-const memory = document.querySelector("#memory");
-const hiddenText = document.querySelector("#hidden-text");
-const typingText = document.querySelector("#typing-text");
+const memory = document.querySelectorAll("#memory");
 
-const text = hiddenText.dataset.text;
 
-memory.addEventListener("click", () => {
 
-    hiddenText.classList.add("show");
+memory.forEach((memory) => {
 
-    typingText.textContent = "";
+    memory.addEventListener("click", () => {
 
-    let index = 0;
+        const hiddenText = memory.querySelector("#hidden-text");
+        const typingText = hiddenText.querySelector("#typing-text");
+        const text = hiddenText.dataset.text;
 
-    function type() {
+        hiddenText.classList.add("show");
 
-        if (index < text.length) {
+        typingText.textContent = "";
 
-            typingText.textContent += text[index];
+        let index = 0;
 
-            index++;
+        function type() {
 
-            setTimeout(type, 50);
+            if (index < text.length) {
+
+                typingText.textContent += text[index];
+
+                index++;
+
+                setTimeout(type, 50);
+            }
         }
-    }
 
-    type();
+        type();
+    });
+
 });
+
+
 
 yesButton.addEventListener("click", () => {
 
     alert("Então vamos escrever esse capítulo juntos ❤️");
 
 });
+
+yesButton.addEventListener("mouseover", () => {
+
+    yesButton.textContent ="Sim ❤️, boraaa aperta isso ai vai";
+
+});
+
+yesButton.addEventListener("mouseout", () => {
+
+    yesButton.textContent = "Sim ❤️";
+
+});
+
 
 noButton.addEventListener("mouseover", () => {
     noButton.textContent = "não ACREDITO que tu sequer passou o mouse em cima do botão 'não'...";
@@ -45,6 +66,6 @@ noButton.addEventListener("mouseout", () => {
 
 noButton.addEventListener("click", () => {
 
-    alert("Tudo bem... mas eu precisava perguntar.");
+    noButton.textContent = "Não é uma opção, vamos escrever esse capítulo juntos ❤️";
 
 });
